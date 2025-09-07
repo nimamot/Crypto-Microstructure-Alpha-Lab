@@ -1,0 +1,16 @@
+numpy
+pandas
+polars
+pyarrow
+duckdb
+ccxt
+scikit-learn
+xgboost
+matplotlib
+plotly
+statsmodels
+pydantic
+pyyaml
+pytest
+black
+isort

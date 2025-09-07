@@ -1,0 +1,10 @@
+data_dir: "data"
+symbols:
+  - "BTC/USDT"
+exchange: "binance"
+timeframe: "1m"
+start: "2025-06-01T00:00:00Z"
+end:   "2025-08-31T23:59:00Z"
+label:
+  horizon_minutes: 1
+  threshold_bps: 2
