@@ -168,10 +168,10 @@ cython_debug/
 # VS Code
 .vscode/
 
-# Only exclude very large raw datasets (keep processed data for showcase)
+# Data files - only exclude very large raw datasets (keep processed data for showcase)
 data/raw/crypto/*/date=*.parquet
 
-# Keep model files for showcase - only exclude very large checkpoints
+# Model files - keep trained models for showcase, only exclude very large checkpoints
 models/checkpoints/
 models/weights/
 
@@ -219,30 +219,25 @@ config_local.yaml
 # Cache directories
 .cache/
 cache/
-__pycache__/
 
-# Virtual environments
-venv/
-env/
-ENV/
-.venv/
+# Virtual environments (already covered above)
+# venv/
+# env/
+# ENV/
+# .venv/
 
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# IDE files (already covered above)
+# .vscode/
+# .idea/
+# *.swp
+# *.swo
+# *~
 
-# MacOS
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Linux
-*~
+# OS files (already covered above)
+# .DS_Store
+# .AppleDouble
+# .LSOverride
+# Thumbs.db
+# ehthumbs.db
+# Desktop.ini
+# *~

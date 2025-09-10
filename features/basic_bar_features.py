@@ -1,3 +1,4 @@
+# features/basic_bar_features.py
 import numpy as np
 import pandas as pd
 
@@ -22,6 +23,11 @@ def add_bar_features(df: pd.DataFrame) -> pd.DataFrame:
     Returns df with feature columns, aligned so row t uses info available by end of bar t.
     """
     df = df.sort_values(["symbol", "datetime"]).copy()
+
+    # Ensure features output does not carry labels if present
+    for c in ("r_fwd", "y_cls"):
+        if c in df.columns:
+            df = df.drop(columns=[c])
 
     # Returns
     df["ret_1"] = np.log(df["close"]).diff(1)
