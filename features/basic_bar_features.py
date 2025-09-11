@@ -54,7 +54,7 @@ def add_bar_features(df: pd.DataFrame) -> pd.DataFrame:
     # RSI
     df["rsi_14"] = _rsi(df["close"].astype(float), 14)
 
-    # Time features
+    # Time features 1
     dt = df["datetime"].dt
     df["dow"] = dt.dayofweek.astype("int8")
     df["minute"] = (dt.hour * 60 + dt.minute).astype("int16")
